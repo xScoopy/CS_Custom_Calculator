@@ -1,6 +1,6 @@
-print("Hello! Welcome to the DPS calculator")
+print("Hello! Welcome to the Total Damage calculator")
 
-name = input("First, what is your name?")
+name = input("First, what is your name? ")
 
 print("Okay, " + name + ", I have some questions about the damage values of your gear.")
 
@@ -18,9 +18,9 @@ boss_fight_duration_min = float(input("How many minutes will the next boss fight
 
 boss_fight_duration_sec = boss_fight_duration_min * 60
 
-dps_boss_fight = total_gear_dmg / boss_fight_duration_sec
+dps_boss_fight = total_gear_dmg
 
-print(f"{name}, your damage per second for this boss fight will be {dps_boss_fight}")
+print(f"{name}, your damage per second for this {boss_fight_duration_min} minute boss fight will be {dps_boss_fight} dps.")
 
 total_bossfight_dmg = dps_boss_fight * boss_fight_duration_sec
 
